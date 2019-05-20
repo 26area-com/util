@@ -1,5 +1,7 @@
-export class hello {
-  public sayHello(): string {
-    return 'Hello';
-  }
+import {OptionalUtil} from "./optional/OptionalUtil";
+import {ListUtil} from './list/ListUtil';
+
+export {
+  OptionalUtil,
+  ListUtil
 }
