@@ -24,6 +24,6 @@ export class ListUtil {
         return false;
       }
     }
-      return true;
+    return true;
   }
 }

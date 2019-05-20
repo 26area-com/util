@@ -1,6 +1,6 @@
 {
   "name": "@26area/util",
-  "version": "0.0.1-rc1",
+  "version": "0.0.1-rc2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
