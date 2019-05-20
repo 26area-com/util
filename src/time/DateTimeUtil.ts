@@ -18,7 +18,7 @@ export class DateTimeUtil {
   }
 
   public static getTimeString(time: Date): string {
-    return `${this.getTimeIn12(time)}:${time.getMinutes()} ${this.getMeridiem(time)}`;
+    return `${this.getTimeIn12(time)}:${DateTimeUtil.getXXInNumber(time.getMinutes())} ${this.getMeridiem(time)}`;
   }
 
   public static addHours(date: Date, hour: number): Date {
@@ -53,8 +53,16 @@ export class DateTimeUtil {
    *
    */
 
-  private static getTimeIn12(time: Date): number {
-    return time.getHours() % 12;
+  private static getTimeIn12(time: Date): string {
+    return DateTimeUtil.getXXInNumber(time.getHours() % 12);
+  }
+
+  private static getXXInNumber(num: number): string {
+    if(num < 10) {
+      return '0' + num;
+    }
+
+    return num.toString();
   }
 
   private static getMeridiem(time: Date): string {
