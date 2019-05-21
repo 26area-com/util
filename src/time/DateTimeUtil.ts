@@ -8,7 +8,7 @@ export class DateTimeUtil {
     }
   }
 
-  // '4/12/2019, 8:54 AM'
+  // '4/12/2019, 08:54 AM'
   public static getDateString(date: Date): string {
     return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
   }
