@@ -50,27 +50,4 @@ export class DurationDto {
   public getDurationInMillis(): number {
     return this.durationInMillis;
   }
-
-  public toString(): string {
-    let timeInString: string = '';
-    if (this.getDay().isPresent()) {
-      timeInString = `${this.getDay().get()} Day`;
-    }
-
-    if (this.getHour().isPresent()) {
-      timeInString = timeInString + ` ${this.getHour().get()} Hour`;
-    }
-
-    if (this.getMinute().isPresent()) {
-      timeInString = timeInString + ` ${this.getMinute().get()} Minute`;
-    }
-
-    if(!!timeInString) {
-      timeInString = timeInString + ' Before';
-    } else {
-      timeInString = 'At time';
-    }
-
-    return timeInString;
-  }
 }

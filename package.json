@@ -1,9 +1,9 @@
 {
   "name": "@26area/util",
-  "version": "0.0.1-rc5",
+  "version": "0.0.1-rc6",
   "description": "",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prepublish": "tsc",
     "build": "tsc"
